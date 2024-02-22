@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!--  
+        This is the file that defines the actual layout and type of the commands.
+        It is divided in different sections (e.g. command definition, command placement), 
+        with each defining a specific set of properties. 
+  -->
+
+
+  <!-- ******************************************************************************************** -->
+  <!--                                        I N C L U D E S                                       -->
+  <!-- ******************************************************************************************** -->
+  <!-- 
+        The VSCT compiler (the tool that translates this file into the binary format that VisualStudio will consume) 
+        has the ability to run a preprocessor  on the vsct file; this preprocessor is (usually) the C++ preprocessor,
+        so it is possible to define includes and macros with the same syntax used  in C++ files.
+  -->
+
+  <!-- This header contains the IDs for all the commands exposed by VisualStudio. -->
+  <Extern href="stdidcmd.h"/>
+
+  <!-- This header contains the command ids for the menus provided by the shell. -->
+  <Extern href="vsshlids.h"/>
+
+  <!-- ******************************************************************************************** -->
+  <!--                                        C O M M A N D S                                       -->
+  <!-- ******************************************************************************************** -->
+  <!-- The Commands section is where the commands, menus and menu groups are defined.               -->
+
+  <Commands package="guidPackage">
+
+    <!-- ******************************************************************************************** -->
+    <!--                                         M E N U S                                            -->
+    <!-- ******************************************************************************************** -->
+    <!-- The menu groups.                                                                             -->
+    <Menus>
+
+      <Menu guid="guidCmdCodeConverter" id="SubMenu" priority="0x0200" type="Menu">
+        <Parent guid="guidCmdCodeConverter" id="MyMenuGroup" />
+        <Strings>
+          <ButtonText>Telerik Code Converter</ButtonText>
+        </Strings>
+      </Menu>
+
+    </Menus>
+
+    <!-- ******************************************************************************************** -->
+    <!--                                        G R O U P S                                           -->
+    <!-- ******************************************************************************************** -->
+    <!-- The menu groups.                                                                             -->
+    <Groups>
+
+      <!-- Code Window Editor Group. -->
+      <Group guid="guidCmdCodeConverter" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
+      </Group>
+
+      <!-- Ref Group. -->
+      <Group guid="guidCmdCodeConverter" id="SubMenuGroup" priority="0x0601">
+        <Parent guid="guidCmdCodeConverter" id="SubMenu" />
+      </Group>
+
+    </Groups>
+
+    <!-- ******************************************************************************************** -->
+    <!--                                       B U T T O N S                                          -->
+    <!-- ******************************************************************************************** -->
+    <!-- The elements the user can interact with, like a menu command or a button or combo box.       -->
+    <Buttons>
+
+      <!-- Convert selected code to C#. -->
+      <Button   guid="guidCmdCodeConverter" id="cmdidConvertSelectedCodeToCSharp" priority="0x0100" type="Button">
+        <Parent guid="guidCmdCodeConverter" id="SubMenuGroup"/>
+        <Icon   guid="guidImageSet"         id="Vb"/>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultDisabled</CommandFlag>
+        <Strings>
+          <ButtonText>&amp;Convert selected code to C#</ButtonText>
+          <ToolTipText>Convert selected code to C#</ToolTipText>
+        </Strings>
+      </Button>
+
+      <!-- Convert selected code to VB.NET. -->
+      <Button   guid="guidCmdCodeConverter" id="cmdidConvertSelectedCodeToVB" priority="0x0101" type="Button">
+        <Parent guid="guidCmdCodeConverter" id="SubMenuGroup"/>
+        <Icon   guid="guidImageSet"         id="Cs"/>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultDisabled</CommandFlag>
+        <Strings>
+          <ButtonText>&amp;Convert selected code to VB.NET</ButtonText>
+          <ToolTipText>Convert selected code to VB.NET</ToolTipText>
+        </Strings>
+      </Button>
+
+      <!-- Convert entire document to C#. -->
+      <Button   guid="guidCmdCodeConverter" id="cmdidConvertCurrentDocumentToCSharp" priority="0x0102" type="Button">
+        <Parent guid="guidCmdCodeConverter" id="SubMenuGroup"/>
+        <Icon   guid="guidImageSet"         id="Vb"/>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultDisabled</CommandFlag>
+        <Strings>
+          <ButtonText>&amp;Convert current document to C#</ButtonText>
+          <ToolTipText>Convert current document to C#</ToolTipText>
+        </Strings>
+      </Button>
+
+      <!-- Convert entire document to VB.NET. -->
+      <Button   guid="guidCmdCodeConverter" id="cmdidConvertCurrentDocumentToVB" priority="0x0103" type="Button">
+        <Parent guid="guidCmdCodeConverter" id="SubMenuGroup"/>
+        <Icon   guid="guidImageSet"         id="Cs"/>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultDisabled</CommandFlag>
+        <Strings>
+          <ButtonText>&amp;Convert current document to VB.NET</ButtonText>
+          <ToolTipText>Convert current document to VB.NET</ToolTipText>
+        </Strings>
+      </Button>
+
+    </Buttons>
+
+    <!-- ******************************************************************************************** -->
+    <!--                                       B I T M A P S                                          -->
+    <!-- ******************************************************************************************** -->
+    <!-- The bitmaps that are used for the commands.                                                  -->
+    <Bitmaps>
+
+      <Bitmap guid="guidImageSet"
+              href=".\Resources\Images.png"
+              usedList="Cs, Vb"/>
+
+    </Bitmaps>
+
+  </Commands>
+
+  <!-- ******************************************************************************************** -->
+  <!--                                   K E Y      B I N D I N G S                                 -->
+  <!-- ******************************************************************************************** -->
+  <!-- The keyboard shortcuts to run commands.                                                      -->
+  <KeyBindings>
+
+    <!-- Convert selected code to VB.NET. -->
+    <KeyBinding guid="guidCmdCodeConverter" id="cmdidConvertSelectedCodeToVB" editor="guidSourceCodeTextEditor"
+                mod1="Control" key1="E"
+                mod2="Control" key2="1"/>
+
+    <!-- Convert current document to VB.NET. -->
+    <KeyBinding guid="guidCmdCodeConverter" id="cmdidConvertCurrentDocumentToVB" editor="guidSourceCodeTextEditor"
+                mod1="Control" key1="E"
+                mod2="Control" key2="2"/>
+
+    <!-- Convert selected code to C#. -->
+    <KeyBinding guid="guidCmdCodeConverter" id="cmdidConvertSelectedCodeToCSharp" editor="guidSourceCodeTextEditor"
+                mod1="Control" key1="E"
+                mod2="Control" key2="3"/>
+
+    <!-- Convert current document to C#. -->
+    <KeyBinding guid="guidCmdCodeConverter" id="cmdidConvertCurrentDocumentToCSharp" editor="guidSourceCodeTextEditor"
+                mod1="Control" key1="E"
+                mod2="Control" key2="4"/>
+
+  </KeyBindings>
+
+  <!-- ******************************************************************************************** -->
+  <!--                                        S Y M B O L S                                         -->
+  <!-- ******************************************************************************************** -->
+  <Symbols>
+
+    <!-- The package guid. -->
+    <GuidSymbol name="guidPackage" value="{A833BB60-94D5-4496-BCA7-D60AA4DBBB5A}"/>
+
+    <!-- Editor IDs. -->
+    <!-- HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0_Config\Editors -->
+    <!-- <GuidSymbol name ="guidVisualBasicEditor" value="{2c015c70-c72c-11d0-88c3-00a0c9110049}" /> -->
+    <!-- <GuidSymbol name ="guidSourceCodeTextWithEncodingEditor" value="{c7747503-0e24-4fbe-be4b-94180c3947d7}" /> -->
+    <GuidSymbol name ="guidSourceCodeTextEditor" value="{8b382828-6202-11d1-8870-0000f87579d2}" />
+
+    <!-- Command-set for CodeReference, ParameterReference and Link buttons. -->
+    <GuidSymbol name="guidCmdCodeConverter" value="{51364FE7-1332-4070-859D-1EC91CA2F406}">
+
+      <IDSymbol name="SubMenu"       value="0x1001"/>
+      <IDSymbol name="SubMenuGroup"  value="0x1000"/>
+      <IDSymbol name="MyMenuGroup"   value="0x1020"/>
+
+      <IDSymbol name="cmdidConvertSelectedCodeToCSharp" value="0x0100"/>
+      <IDSymbol name="cmdidConvertSelectedCodeToVB" value="0x0101"/>
+      <IDSymbol name="cmdidConvertCurrentDocumentToCSharp"  value="0x0102"/>
+      <IDSymbol name="cmdidConvertCurrentDocumentToVB"  value="0x0103"/>
+
+    </GuidSymbol>
+
+    <!-- The image resource guids. -->
+    <GuidSymbol name="guidImageSet" value="{4CA3BC45-EA9B-4E68-A258-91A3F49DF731}">
+      <IDSymbol name="Cs" value="1"/>
+      <IDSymbol name="Vb" value="2"/>
+    </GuidSymbol>
+
+  </Symbols>
+  
+</CommandTable>

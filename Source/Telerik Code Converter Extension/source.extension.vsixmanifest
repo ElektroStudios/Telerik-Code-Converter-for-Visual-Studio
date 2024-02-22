@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="Telerik_Code_Converter_Extension.d71f707b-8b36-4726-87af-de889030e2bb" Version="1.1" Language="en-US" Publisher="ElektroStudios" />
+        <DisplayName>Telerik Code Converter for Visual Studio</DisplayName>
+        <Description xml:space="preserve">Code Conversion utility for C# and VB.NET based on https://converter.telerik.com/ web service by Telerik.</Description>
+        <MoreInfo>https://github.com/ElektroStudios/Telerik-Code-Converter-Client-For-Windows</MoreInfo>
+        <License>LICENSE.txt</License>
+        <GettingStartedGuide>https://github.com/ElektroStudios/Telerik-Code-Converter-Client-For-Windows?tab=readme-ov-file#-getting-started</GettingStartedGuide>
+        <Icon>Resources\Package.ico</Icon>
+        <PreviewImage>Resources\Package.ico</PreviewImage>
+        <Tags>tool converter code codeconverter code-converter vbnet csharp c# source telerik</Tags>
+    </Metadata>
+    <Installation AllUsers="true">
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,]">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.8,]" />
+        <Dependency d:Source="Installed" Version="[17.0,]" Id="Microsoft.VisualStudio.MPF.17.0" DisplayName="Visual Studio MPF 17.0" />
+    </Dependencies>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,]" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    </Assets>
+</PackageManifest>
