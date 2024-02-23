@@ -54,7 +54,7 @@ Download a recorded video by clicking [here](/Video/Telerik_Code_Converter_Demo.
 
 ## 🤖 Getting Started
 
-Download the latest release by clicking [here](https://github.com/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio/releases/latest).
+Download the latest release by clicking [here](https://github.com/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio/releases/latest) or from [Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=elektroHacker.TelerikCodeConverterExtensionVS2022).
 
 ## 🔄 Change Log
 
