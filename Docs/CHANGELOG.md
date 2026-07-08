@@ -1,4 +1,4 @@
-# Telerik Code Converter Extension for Visual Studio Change Log 📋
+﻿# Telerik Code Converter Extension for Visual Studio Change Log 📋
 
 ## v1.1 (2024) *(current)* 🆕
 #### 🛠️ Fixes:

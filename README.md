@@ -1,4 +1,4 @@
-<!-- Common Project Tags:
+﻿<!-- Common Project Tags:
 code 
 code-conversion 
 code-converter 
@@ -26,13 +26,63 @@ visualstudio
 visualstudio-extension 
  -->
 
-# Telerik Code Converter Extension for Visual Studio
+<div align="center">
+  <img src="/Images/App.ico" width="100" alt="Logo">
+  
+  <h1>Telerik Code Converter Extension for Visual Studio</h1>
 
 ### Code Conversion extension for C# and VB.NET using [Telerik Code Converter web service](https://converter.telerik.com/).
 
-Also available as a standalone desktop application by clicking [here](https://github.com/ElektroStudios/Telerik-Code-Converter-Client-For-Windows).
+Also available as a standalone desktop application [here](https://github.com/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio).
+
+</div>
 
 ------------------
+
+<p align="center">
+    <a href="https://github.com/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio/network/members"><img src="https://img.shields.io/github/forks/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio.svg?style=social&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg%3D%3D&label=%F0%9F%8D%B4%20Forks" alt="Forks"></a>&nbsp;
+    <a href="https://github.com/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio/graphs/contributors"><img src="https://img.shields.io/github/contributors/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio.svg?style=social&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg%3D%3D&label=%F0%9F%91%A5%20Contributors" alt="Contributors"></a>&nbsp;
+    <a href="https://github.com/ElektroStudios"><img src="https://img.shields.io/github/followers/ElektroStudios.svg?style=social&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg%3D%3D&label=%F0%9F%91%A4%20Followers" alt="Followers"></a>&nbsp;
+    <a href="https://github.com/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio/watchers"><img src="https://img.shields.io/github/watchers/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio.svg?style=social&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg%3D%3D&label=%F0%9F%91%80%20Watchers" alt="Watchers"></a>
+    <a href="https://github.com/sponsors/ElektroStudios"><img src="https://img.shields.io/github/sponsors/ElektroStudios.svg?style=social&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg%3D%3D&label=%F0%9F%92%96%20Sponsors" alt="Sponsors"></a>&nbsp;
+    <a href="https://github.com/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio/stargazers"><img src="https://img.shields.io/github/stars/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio.svg?style=social&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg%3D%3D&label=%E2%AD%90%20Stars" alt="Stars"></a>
+  <br>
+  <br>
+    <a href="https://ci.appveyor.com/project/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio"><img src="https://ci.appveyor.com/api/projects/status/github/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio?svg=true" alt="AppVeyor CI"></a>
+    <a href="https://sonarcloud.io/summary/new_code?id=ElektroStudios_Telerik-Code-Converter-for-Visual-Studio"><img src="https://sonarcloud.io/api/project_badges/measure?project=ElektroStudios_Telerik-Code-Converter-for-Visual-Studio&metric=alert_status" alt="SonarCloud Quality Gate"></a>
+    <a href="https://github.com/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio/releases/latest"><img src="https://img.shields.io/github/v/release/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio" alt="Latest Release"></a>
+    <a href="https://learn.microsoft.com/en-us/dotnet/visual-basic/"><img src="https://img.shields.io/badge/language-VB.NET-purple.svg?logo=visualbasic" alt="Language"></a>
+    <a href="https://learn.microsoft.com/en-us/windows/apps/"><img src="https://img.shields.io/badge/platform-Windows-lightgray.svg" alt="Platform"></a>
+    <a href="LICENSE"><img src="https://img.shields.io/github/license/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio" alt="License"></a>
+  <br>
+    <a href="https://api.github.com/repos/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio/zipball"><img src="https://img.shields.io/github/repo-size/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio" alt="Repo size"></a>
+    <a href="https://somsubhra.github.io/github-release-stats/?username=ElektroStudios&repository=Telerik-Code-Converter-for-Visual-Studio"><img src="https://img.shields.io/github/downloads/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio/total.svg?label=total%20downloads" alt="Total Downloads"></a>
+    <a href="https://github.com/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio/commits"><img src="https://img.shields.io/github/last-commit/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio" alt="Last commit"></a>
+    <a href="https://github.com/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio/pulls"><img src="https://img.shields.io/github/issues-pr/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio" alt="Pull Requests"></a>
+    <a href="https://github.com/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio/issues?q=is%3Aissue+is%3Aopen"><img src="https://img.shields.io/github/issues/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio?color=blue" alt="Open Issues"></a><a href="https://github.com/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio?label=&color=28a745" alt="Closed Issues"></a>
+    <a href="https://github.com/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio/pulse"><img src="https://img.shields.io/badge/maintained-yes-green.svg" alt="Maintenance"></a>
+  <br>
+  <br>
+    <a href="https://en.wikipedia.org/wiki/Spanish_Empire"><img src="https://img.shields.io/badge/Made_in-Spain_%F0%9F%87%AA%F0%9F%87%B8-AA151B?style=flat" alt="Made in Spain"></a>
+</p>
+
+------------------
+
+## 👋 Introduction
+
+**Telerik Code Converter Extension** is an independent Visual Studio integration designed to convert source code seamlessly between C# and VB.NET directly inside your integrated development environment. By communicating with the public [Telerik Code Converter web service](https://converter.telerik.com/), this extension allows you to transform code blocks, selections, or entire files without context-switching or leaving your active code editor.
+
+> [!IMPORTANT]
+> This project is a non-commercial, third-party client tool. It is not affiliated with, authorized, or sponsored by Progress Telerik.
+
+## 💡 Motivation
+
+While the official web-based converter works great for occasional snippets, constantly switching to a web browser, pasting code, selecting languages, and copying the results back to your IDE becomes tedious during heavy migration tasks. 
+
+This extension was built to streamline that workflow. By integrating the service directly into the Visual Studio context menu, it automates the request-response lifecycle, allowing you to instantly convert and replace code with a single click right where you are working.
+
+##### ⚡ The Real Question
+###### Why disrupt your development flow by constantly bouncing between your IDE and a web browser just to convert single blocks of code?.
 
 ## 🖼️ Screenshots
 
@@ -44,21 +94,30 @@ Also available as a standalone desktop application by clicking [here](https://gi
 
 ![screenshot](/Images/4.png)
 
-## 🎦 Demo
+## 🎦 Videos
 
-Download a recorded video by clicking [here](/Video/Telerik_Code_Converter_Demo.mp4).
+[DEMO](https://github.com/user-attachments/assets/7b15befb-3ed7-40f8-9a45-b46d9785049d).
 
 ## 📝 Requirements
 
-- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) (Community edition or higher).
+- [Visual Studio 2022-2026 (Community edition or higher)](https://visualstudio.microsoft.com/downloads/)
 
-## 🤖 Getting Started
+## 🚀 Getting Started
 
-Download the latest release by clicking [here](https://github.com/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio/releases/latest) or from [Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=elektroHacker.TelerikCodeConverterExtensionVS2022).
+You can install the extension using either of the following methods:
+
+* **Automated Install:** Download it directly from the **[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=elektroHacker.TelerikCodeConverterExtensionVS2022)** or search for "Telerik Code Converter" inside Visual Studio's *Extensions > Manage Extensions* menu.
+* **Manual Install:** Download the latest `.vsix` package from the **[GitHub Releases page](https://github.com/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio/releases/latest)** and open the file to trigger the VSIX Installer.
 
 ## 🔄 Change Log
 
 Explore the complete list of changes, bug fixes, and improvements across different releases by clicking [here](/Docs/CHANGELOG.md).
+
+## 💪 Contributing
+
+Your contribution is highly appreciated!. If you have any ideas, suggestions, or encounter issues, feel free to open an issue by clicking [here](https://github.com/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio/issues/new/choose). 
+
+Your input helps make this Work better for everyone. Thank you for your support! 🚀
 
 ## 🏆 Credits
 
@@ -68,39 +127,23 @@ This work relies on the following technologies, services and libraries:
  - [Telerik Code Converter](https://converter.telerik.com/)
  - [Json.NET](https://www.newtonsoft.com/json)
 
-## ⚠️ Disclaimer:
+## ⚠️ Disclaimer
 
-This Work (the repository and the content provided in) is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the Work or the use or other dealings in the Work.
+### Trademark Notice
+All product names, logos, brands, and trademarks (including "Telerik" and "Progress Telerik") are property of their respective owners. All company, product, and service names used in this repository are for identification and compatibility purposes only. The use of these names, logos, and brands does not imply endorsement or affiliation.
 
 This Work has no affiliation, approval or endorsement by [Telerik](https://www.telerik.com/) company.
 
-## 💪 Contributing
+---
 
-Your contribution is highly appreciated!. If you have any ideas, suggestions, or encounter issues, feel free to open an issue by clicking [here](https://github.com/ElektroStudios/Telerik-Code-Converter-for-Visual-Studio/issues/new/choose). 
+This software and its associated repository are provided strictly on an "as is" basis, without warranties of any kind, whether express or implied. This includes, but is not limited to, any implied warranties of merchantability, reliability, or fitness for a particular purpose.
 
-Your input helps make this Work better for everyone. Thank you for your support! 🚀
+The authors and copyright holders assume no liability for any direct, indirect, incidental, or consequential damages—including data loss or system errors—arising from the use, misuse, or inability to use this software. You are solely responsible for determining the appropriateness of using this tool and assume all associated risks.
 
-## 💰 Beyond Contribution 
+Furthermore, this project operates entirely independently. The utilization of any third-party libraries or components within this software does not imply any affiliation with, or endorsement or approval by, their respective original authors.
 
-This work is distributed for educational purposes and without any profit motive. However, if you find value in my efforts and wish to support and motivate my ongoing work, you may consider contributing financially through the following options:
+This software may interact with third-party services, websites, or platforms. It is the user's sole responsibility to ensure that such use complies with the applicable terms of service, laws, and regulations. The authors do not endorse, and are not responsible for, any misuse of this software to violate third-party terms of service or applicable law.
 
-<br></br>
-<p align="center"><img src="/Images/github_circle.png" height=100></p>
-<p align="center">__________________</p>
-<h3 align="center">Becoming my sponsor on Github:</h3>
-<p align="center">You can show me your support by clicking <a href="https://github.com/sponsors/ElektroStudios/">here</a>, <br align="center">contributing any amount you prefer, and unlocking rewards!</br></p>
-<br></br>
+By using this software, you agree to indemnify and hold harmless the authors from any claims, damages, or liabilities arising from your use or misuse of it.
 
-<p align="center"><img src="/Images/paypal_circle.png" height=100></p>
-<p align="center">__________________</p>
-<h3 align="center">Making a Paypal Donation:</h3>
-<p align="center">You can donate to me any amount you like via Paypal by clicking <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E4RQEV6YF5NZY">here</a>.</p>
-<br></br>
-
-<p align="center"><img src="/Images/envato_circle.png" height=100></p>
-<p align="center">__________________</p>
-<h3 align="center">Purchasing software of mine at Envato's Codecanyon marketplace:</h3>
-<p align="center">If you are a .NET developer, you may want to explore '<b>DevCase Class Library for .NET</b>', <br align="center">a huge set of APIs that I have on sale. Check out the product by clicking <a href="https://codecanyon.net/item/elektrokit-class-library-for-net/19260282">here</a></br><br align="center"><i>It also contains all piece of reusable code that you can find across the source code of my open source works.</i></p>
-<br></br>
-
-<h2 align="center"><u>Your support means the world to me! Thank you for considering it!</u> 👍</h2>
+This project is licensed under the **Apache License, Version 2.0**. See the  [License](./LICENSE) file for details.
